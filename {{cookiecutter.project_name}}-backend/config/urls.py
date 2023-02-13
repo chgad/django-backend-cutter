@@ -15,10 +15,9 @@ Including another URLconf
     url(r'^admin/', admin.site.urls),
 ]"""
 
-from django.conf.urls import include, url
+from django.urls import include, path
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^', include('main.urls'), name='main'),
-    url(r'^admin/', admin.site.urls),
+    path(r'^admin/', admin.site.urls),
 ]
